@@ -1,1 +1,1 @@
-($=>$=_=>setTimeout(_=>$.constructor`debugger```|$``,4e3))()()
+new Worker('data:,($=>$=_=>requestAnimationFrame(_=>$.constructor`debugger`($``)))()()')
