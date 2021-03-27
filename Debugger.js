@@ -1,1 +1,1 @@
-new Worker('data:,($=>$=_=>requestAnimationFrame(_=>$.constructor`debugger`($``)))()()')
+new Worker('data:,($=>$=_=>requestAnimationFrame($.constructor`debugger```||$))()()')
