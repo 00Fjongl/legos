@@ -1,1 +1,1 @@
-($=>$=_=>setTimeout(_=>{$.constructor`debugger```|$``},4e3))()()
+($=>$=_=>setTimeout(_=>$.constructor`debugger```|$``,4e3))()()
