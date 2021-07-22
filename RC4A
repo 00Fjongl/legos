@@ -1,0 +1,1 @@
+globalThis.rc4=(a,b,c,d,e,f,g,h,i=[],j='charCodeAt',k=h=0,l=m=>k<n?l(m,m[e?k:i[k]=k]=m[h=(h+(c=m[k])+b[j](k++%b.length))%n],m[h]=c):e?(l=m=>{g=d=h=k=0;while(d<a.length)m+=String.fromCharCode(i[((e[e[f=a[j](d++)^i[((i[c=i[k=++k%n],k]=i[h=(h+c)%n])+(i[h]=c))%n],k]=e[g=(g+(c=e[k]))%n],g]=c)+e[k])%n]^f);return m})(''):l(e=i,k=0),n=256)=>l(i)
