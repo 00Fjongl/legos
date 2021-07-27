@@ -1,1 +1,1 @@
-globalThis.int=(a,d,b='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',c=b.length)=>(d=d?a=>(a>=c?d((a/c>=c?a:a-1)/c):'')+b[a%c|0]:([...a],e=a.pop())=>(a[0]?d(a)*c||c:0)+b.indexOf(e))(a);
+globalThis.int=(a,d,b='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',c=b.length)=>(d=d?a=>(a>=c?d((a/c>=c?a:a-1)/c):'')+b[a%c|0]:([...a],e,f=a.pop())=>(a+a?d(a)*c:!e)+b.indexOf(f))(a,1);
