@@ -1,1 +1,1 @@
-self.add=(x,y,w='length',a=x[w],d='indexOf',b=x[d]`.`+1||a+1,c=y[d]`.`+1||y[w]+1,e=y[w]-a,z=e-c+b)=>{for(w=e-(z<0?z:0),e=z<0?0:z,z='';(b=x[--a+e])+(c=y[a+w]);)z=(b=='.'|c=='.'?'.':(d=~~b+~~c+(d>9))%10)+z;return(d>9|0||'')+z}
+self.add=(x,y,a='length',b='indexOf',c='.',d=x[a],e=x[b](c)+1||d+1,f=y[b](c)+1||y[a]+1,g=y[a]-d,z=g-f+e)=>{for(a=g-(z<0?z:0),g=z<0?0:z,z='';(e=x[--d+g])+(f=y[d+a]);)z=(e==c|f==c?c:(b=~~e+~~f+(b>9))%10)+z;return(b>9|0||'')+z}
