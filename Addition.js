@@ -1,1 +1,1 @@
-self.add=(x,y,d='length',f=f=>f.indexOf('.')+1,a=x[d],b=f(x)||a+1,c=f(y)||y[d]+1,e=y[d]-a+b-c,w=(e*=e>0)-b+c,z='')=>{for(;(b=x[--a+e])+(c=y[a+w]);z=(f(b+c)?'.':d%10)+z)d=~~b+~~c+(d>9);return(d>9?1:'')+z}
+self.add=(x,y,d='length',f=f=>f.indexOf('.')+1,a=x[d],b=f(x)||a+1,c=f(y)||y[d]+1,e=y[d]-a+b-c,w=(e*=e>0)-b+c,z='')=>{for(;(b=x[--a+e])+(c=y[a+w]);)z=(f(b+c)?'.':(d=~~b+~~c+(d>9))%10)+z;return d>9?1+z:z}
