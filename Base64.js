@@ -1,0 +1,1 @@
+globalThis.b64=(i,d,o='',k='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',x,y,z)=>d?i.map((a,c)=>c%3?0:o+=k[[x,y,z]=i.subarray(c,c+3),x>>2]+k[(x&3)<<4|y>>4]+k[y+1?(y&15)<<2|z>>6:64]+k[y+z+1?z&63:64])&&o:Uint8Array.from({length:parseInt(i.length/4*3,10,d=d=>k.indexOf(i[d]||''))},(i,k)=>d(i=4*(k/3|0)+(k%=3)+1)^64|!k&&(d(i-1)&127>>(1^(k*=2)))<<2+k|d(i)>>4-k);
