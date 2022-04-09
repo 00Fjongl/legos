@@ -1,1 +1,1 @@
-globalThis.b64=(i,d=d=>'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='.indexOf(i[d]||''))=>Uint8Array.from({length:parseInt(i.length/4*3,10)},(i,k)=>d(i=4*(k/3|0)+(k%=3)+1)^64|!k&&d(i-1)<<2+k*2|d(i)>>4-k*2);
+globalThis.b64=(i,d=d=>'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='.indexOf(i[d]||''))=>Uint8Array.from({length:parseInt(i.length/4*3,10)},(i,k)=>d(i=4*(k/3|0)+(k%=3)+1)^64|!k&&(d(i-1)&127>>(1^k*2))<<2+k*2|d(i)>>4-k*2);
