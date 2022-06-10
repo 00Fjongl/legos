@@ -33,14 +33,14 @@ Eye-tolerant version:
   
 All of the above are sorted by .codePointAt() in ascending order. These can be reordered in any way, as long as there are no duplicate encoding characters.  
   
-\n\r  
+`\n\r`  
 Input elements accept all of the one-byte characters except new lines and line feeds.  
   
-\"'`  
+```\"'` ```  
 Backslashes, quotes, apostrophes, and backticks/grave accents are not considered "manipulation-friendly" because they can make it frustrating to store raw text. If handled carelessly, backslashes can escape certain characters and cause them to be misinterpreted.  
   
-#&/:?  
+`#&/:?`  
 The hash/number sign, the ampersand, the forward slash, the colon, and the question mark can all interfere with how the rest of the URL is interpreted and can cause issues if the encoding is not placed at the very end of the URL.  
   
-01ILOilo  
+`01ILOilo`  
 The eye-tolerant version removes lookalike characters from the list of alphanumerical characters.
