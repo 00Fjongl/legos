@@ -19,7 +19,7 @@ globalThis.enc=(a,b,$='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU
 globalThis.enc=(a,b,$='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',e='0123456789abcdef',f=BigInt,i=(a,b,c=k,d=1n,e=b?-d--:'',g=f(c[j]),h=g-d)=>{if(e)while(a[d])e=++e*g+f(c.indexOf(a[d++]));else if(h?a>=0:![e=c.repeat([++a])])do e=c[(b=(g-d*g+h*a)/(h*d))%g]+e;while(d*=g,g<=b);return e},j='length',[k]=[$,$]=$.split(/(?=[^]$)/))=>b?new TextDecoder().decode(Uint8Array.from({length:(b=i(i(a.slice(0,a.indexOf($)),1),0,e),a=i(i(a.slice(a.indexOf($)+1),1,k+$),0,e))[j]},(d,e)=>parseInt((b[e-j]||'')+a[e],16),j=a[j]-b[j])):i(i(new TextEncoder().encode(a).forEach((c,e)=>{b+=(c=2-(c=c.toString(16))[j]&&e?c+0:(c[1]||'')+c[0])[0];a+=c[1]||''},a=b='')||a,1,e))+$+i(i(b,1,e),0,k+$);
 
 //generalized UTF-8 encoder v4
-//best for most use cases
+//faster and slightly inefficient v2
 globalThis.enc=(a,b,$='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',e='0123456789abcdef',f=BigInt,h='slice',i=(a,b,c=k+$,d=1n,e=b?-d--:l,g=f(c[j]),h=g-d)=>{if(e)while(a[d])e=++e*g+f(c.indexOf(a[d++]));else if(h?a>=0:![e=c.repeat(++a+l)])do e=c[(b=(g-d*g+h*a)/(h*d))%g]+e;while(d*=g,g<=b);return e},j='length',[k]=[$,$]=$.split(/(?=[^]$)/),l='')=>b?new TextDecoder().decode(Uint8Array.from({length:(a=i(i(([b,a]=[a[h](0,b=a.indexOf($)),a[h](b+1)])[b=i(i(a[h](0,a=(a[j]-[b&&i(b,1,k)+1n])/2),1),0,e),1][h](a),1),0,e))[j]},(d,f)=>l+i(((d=b[f-h])!='f'?d||l:l)+a[f],1,e),h=a[j]-b[j])):((h=(a=i(i(new TextEncoder().encode(a).forEach((d,k)=>{b+=(d=2-(d=i(f(d),0,e))[j]&&k?d+'f':(d[1]||l)+d[0])[0];a+=d[1]||l},a=b=l)||a,1,e)),b=i(i(b,1,e)))[j]-a[j])?i(f(h-1),0,k):l)+$+a+b;
 
 //base64-reliant UTF-8 encoder
