@@ -3,12 +3,8 @@
 /(?<=url\((?<a>["']?)).*?(?=\k<a>\))|(?<=@import .*?(?<b>"|')).*?(?=\k<b>;)/g //Grab CSS URLs
 .replace(/(?<=[a-z])([A-Z])/g,'-$1').toLowerCase() //camelCase identifiers to dashes
 /(?:%[^\W_]{2})+/g //decodeURIComponent without errors
-/*
 
-all one-byte characters, excluding "'`\n\r\ for encoding
-\x00\x01\x02\x03\x04\x05\x06\x07\b\t\v\f\x0E\x0F\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\x1B\x1C\x1D\x1E\x1F !#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_abcdefghijklmnopqrstuvwxyz{|}~\x7F
 
-*/
 //All-in-one Discord phishing filter
 /((b|d|cl)[^\w\s]?([il1][^\w\s]?s?([aeiol10][^\w\s]?s?|[s5])[^\w\s]?(c[^\w\s]?[aceo0][^\w\s]?c?|[aceo0][^\w\s]?c[^\w\s]?c?[^\w\s]?r)[^\w\s]?r?|[il1]?[^\w\s]?[aeious015][^\w\s]?c[^\w\s]?[aceo0][^\w\s]?(c?[^\w\s]?r|r[^\w\s]?[s5]?)|[il1]{1,2}[^\w\s]?(s[^\w\s]?s?[^\w\s]?(c?[^\w\s]?[cq][^\w\s]?[aceo0]{0,2}[^\w\s]?c?[^\w\s]?[nru][^\w\s]?[nru]?|c[^\w\s]?r[^\w\s]?r?[^\w\s]?[aceo0])|c[^\w\s]?s[^\w\s]?[aceo0][^\w\s]?[nru][^\w\s]?[nru]?|rsc[aceo0]))[^\w\s]?[bdct]{1,2}[^\w\s]?\w?[^\w\s]?([aeo4]pp?p?)?|(b|d|cl)[il1]sc[aeiou]?app[sz]?|((b|d|cl)[\w-]+|(?<!\w)\w?)n[il1]?tr[aceo0])([-._]?\w+)*\.(?!((?<=(?<!\w|-)discord\.)(com|gift|gg|org|link|io|sh)|js|py|html|png|jpe?g|gif|txt|(?<=(?<!\w|-)discordapp\.)(com|net))(?![\w.-]))(?=\w[\w.])|[s5]t\w?([e3][a4]|[a4][e3])([mnr]|rn)(m|n|rn)?_?_?([ckq][aceionu]((m|rn)(m|rn)?(m|rn)?|[rmn]{1,3}[mn]))?\w?[aceionu][nty][aceionuy1][nty][ntuy]\w?\.(?!(?<=(?<!\w|-)steamcommunity\.)com(?![\w.-]))(?=\w[\w.])|((?=[\s\S]*n[il1]*(?<!(?<!\w)in)t+r+[aceo0]+)(?=[\s\S]*(f+r+[e3]+([b8]+[il1]+[e3]+)?[^A-z]+|f+r+[e3]{2,}))|@everyone|@here)[\s\S]*(@everyone|@here|(?!(https?:\/\/)?(canary\.)?(?<!\w|-)discord\.com(?![\w.-]))(https?:\/\/[\w-]+\.\w|(?<!\w|-)\w[\w-]{0,99}\.[a-z]{2}))|(?!(https?:\/\/)?(canary\.)?(?<!\w|-)discord\.com(?![\w.-]))(https?:\/\/[\w-]+\.\w|(?<!\w|-)\w[\w-]{0,99}\.[a-z]{2})[\s\S]*@(everyone|here)|rookrsx7o40clud\/captians_game/gi
 
