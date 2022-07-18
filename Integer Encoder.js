@@ -5,7 +5,7 @@ globalThis.int=(a,d,b='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU
 globalThis.int=(a,b,c='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',d=1n,e=b?-d--:'',f=(b=BigInt)(c.length),g=f-d)=>{if(e)while(a[d])e=++e*f+b(c.indexOf(a[d++]));else if(g?a>=0:![e=c.repeat([++a])])do{e=c[(b=(f-d*f+g*a)/(g*d))%f]+e;d*=f}while(f<=b);return e};
 
 //version 3
-globalThis.int=(a,b,c='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',d=1n,e=b?-d--:'',f=(b=BigInt)(c.length))=>(e?g=>{while(a[d])e=++e*f+b(c.indexOf(a[d++]))}:g=>{if(g?a>=0:![e=c.repeat([++a])])do{e=c[(b=(f-d*f+g*a)/(g*d))%f]+e;d*=f}while(f<=b)})(f-d)||e;
+globalThis.int=(a,b,c='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',d=1n,e=b?-d:'',f=(b=BigInt)(c.length))=>(e?(d=>{while(a[d])e=++e*f+b(c.indexOf(a[d++]))})``:f-d?a>=0&&(g=>{do{e=c[(b=(f-d*f+g*a)/(g*d))%f]+e;d*=f}while(f<=b)})(f-d):c.repeat([++a]))||e;
 
 //generalized UTF-16 surrogate pair encoder
 globalThis.enc=(a,b,c='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!#$%&()*+,-./:;<=>?@[]^{|}~',d=1n,e=b?-d--:'',f=(b=BigInt)(c.length),g=f-d,i=a=>{if(e)while(a[d])e=++e*f+b(c.indexOf(a[d++]));else do e=c[(b=(f-d*f+g*a)/(g*d))%f]+e;while(d*=f,f<=b);return e})=>e?(i(a)+'').replace(/[^]{1,7}(?=(?:[^]{7})*$)/g,a=>String.fromCodePoint(a)):i(b(a.replace(/[^]/g,a=>'0'.repeat(7-(a=''+a.codePointAt()).length)+a)));
