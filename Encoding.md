@@ -39,7 +39,7 @@ All of the above are sorted by .codePointAt() in ascending order. These can be r
 `\n\r`  
 Input elements accept all of the one-byte characters except new lines and line feeds.  
   
-```\r"'` ```  
+```\r"'\\` ```  
 Line feeds, quotes, apostrophes, backslashes, and backticks/grave accents are not considered "manipulation-friendly" because they can make it frustrating to store raw text. Line feeds will often disappear from the output when stored in a page or in many other areas. Backslashes, if handled carelessly, can escape certain characters and cause them to be misinterpreted.  
   
 `#&/:?`  
