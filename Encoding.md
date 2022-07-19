@@ -31,8 +31,8 @@ Word-break-tolerant version:
 Eye-tolerant version:  
 ```23456789ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz```  
   
-Base64 version:
-```ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=```
+Base64 version:  
+```ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=```  
   
   
 ### NOTES
