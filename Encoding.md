@@ -25,6 +25,9 @@ encodeURI-tolerant version:
 encodeURIComponent-tolerant version:  
 ```!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~```  
   
+URLSearchParams-tolerant version:  
+```*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz```
+  
 Word-break-tolerant version:  
 ```0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz```  
   
