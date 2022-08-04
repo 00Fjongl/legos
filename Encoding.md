@@ -16,8 +16,11 @@ Friendly version:
 More friendly version:  
 ``` !#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_abcdefghijklmnopqrstuvwxyz{|}~```  
   
-URL-tolerant version:  
+Address-bar-tolerant version:  
 ```\x00\x01\x02\x03\x04\x05\x06\x07\b\t\v\n\f\r\x0E\x0F\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\x1B\x1C\x1D\x1E\x1F !"$'()*+,-.0123456789;<=>@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\x7F```  
+  
+URL-tolerant version:  
+```!$'()*+,-.0123456789;=@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_abcdefghijklmnopqrstuvwxyz~```  
   
 encodeURI-tolerant version:  
 ```!$'()*+,-.0123456789;=@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~```  
